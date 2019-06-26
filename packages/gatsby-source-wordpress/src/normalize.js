@@ -420,7 +420,7 @@ exports.mapEntitiesToMedia = entities => {
           mediaNodeID: value
             .map(item => getMediaFromValue(item, key).mediaNodeID)
             .filter(id => id !== null),
-          deleteField: true,
+          deleteField: false,
         }
       }
       return {
